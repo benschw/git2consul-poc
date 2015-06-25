@@ -35,17 +35,12 @@ else
 fi
 
 
-if [ -f "/usr/local/bin/git2consul" ]; then
+if [ -f "/etc/init.d/git2consul" ]; then
 	echo git2consul already installed
 else
 	apt-get install -y nodejs
 
-	wget http://bit.ly/1TPcMx5 -O /tmp/git2consul.deb 2&>1 > /dev/null
-	dpkg -i /tmp/git2consul.deb
-	rm /tmp/git2consul.deb
-
-	wget http://bit.ly/1RzRv6Q -O /tmp/git2consul-tools.deb 2&>1 > /dev/null
-	dpkg -i /tmp/git2consul-tools.deb
-	rm /tmp/git2consul-tools.deb
+	dpkg -i /vagrant/git2consul-tools/build/git2consul-amd64.deb
+	dpkg -i /vagrant/git2consul-tools/build/git2consul-tools-amd64.deb
 fi
 

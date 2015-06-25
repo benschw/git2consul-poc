@@ -1,4 +1,4 @@
 #!/bin/bash
 
-nodejs /usr/local/lib/node_modules/git2consul/utils/config_seeder.js "$@"
+nodejs /usr/lib/node_modules/git2consul/utils/config_seeder.js "$@"
 

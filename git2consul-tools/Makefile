@@ -28,7 +28,7 @@ clean:
 
 
 git2consul-deb: build
-	fpm -s npm -t deb -p build/git2consul-and64.deb git2consul 
+	fpm -s npm -t deb -p build/git2consul-amd64.deb git2consul 
 
 # sudo apt-get install ruby-dev build-essential
 # sudo gem install fpm
