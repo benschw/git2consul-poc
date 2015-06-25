@@ -42,5 +42,12 @@ else
 
 	dpkg -i /vagrant/git2consul-tools/build/git2consul-amd64.deb
 	dpkg -i /vagrant/git2consul-tools/build/git2consul-tools-amd64.deb
+
+	git2consul-config_seeder /vagrant/git2consul.json
+
+	service git2consul start
 fi
+
+
+
 
