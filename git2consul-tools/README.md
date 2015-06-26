@@ -18,3 +18,8 @@
 
 	# git2consul
 	nodejs /usr/local/lib/node_modules/git2consul/
+
+## Docker
+
+	sudo docker build -t consulkv .
+	sudo docker run -p 8500:8500 consulkv
